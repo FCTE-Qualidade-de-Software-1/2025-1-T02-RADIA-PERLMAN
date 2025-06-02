@@ -1,6 +1,8 @@
-site_name: My Docs
+site_name: Radia Perlman
 nav:
-  - Sobre: sobre.md
+  - Home: index.md
+  - Agromart: sobre.md
+  - Processo Avaliação: processo-avaliacao.md
   - Abstraction Sheet: abstraction-sheet.md
 extra_css:
   - assets/custom.css

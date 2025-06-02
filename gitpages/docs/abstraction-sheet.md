@@ -23,16 +23,26 @@
 
 - **Hipótese Q3.** Pelo menos 90% das funcionalidades da AgroMart estão na documentação, tendo a descrição de como utilizá-lo.
 
-| **Campo**                           | **Descrição**                                                                                                                                       |
-|------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Objeto**                         | Proteção contra erros do usuário                                                                                                                    |
-| **Propósito**                      | Avaliar                                                                                                                                             |
-| **Foco da Qualidade**              | Usabilidade                                                                                                                                         |
-| **Ponto de Vista**                 | Usuário consumidor (Co-Produtor)                                                                                                                    |
-| **Foco de Qualidade**              |         Usabilidade                                                                                                                         |
-| **Fatores de Variação**                    | - Clareza da mensagem do erro ocorrido  <br> - Visibilidade de status do sistema                                                                   |
-| **Hipóteses de Baseline**          | Distribuição pela clareza das informações: <br> - 90% das mensagens de erro possíveis descrevem de forma coerente o real motivo do erro, no mínimo. <br> - Pelo menos 90% das mensagens de erro não mencionam termos relacionados ao funcionamento interno do sistema. <br> - Pelo menos 90% das funcionalidades da AgroMart estão na documentação, tendo a descrição de como utilizá-lo.                                                                                                                   |
-| **Impacto nas hipóteses de baseline** | Consequências da má disposição de informações: <br> Caso a disposição de informações do AgroMart não seja acessível ou não apresentem uma linguagem compreensível, afetará em: <br> - Capacidade de identificar o motivo da falha; <br> - Compreensão de como corrigir a falha; <br> - Capacidade de consultar instruções previamente elaboradas. |
+# Abstraction sheet do Objetivo de Medição 1
+
+| **Objeto**            | Proteção contra erros do usuário |
+| --------------------- | -------------------------------- |
+| **Propósito**         | Avaliar                          |
+| **Foco da Qualidade** | Usabilidade                      |
+| **Ponto de Vista**    | Usuário consumidor (Co-Produtor) |
+
+---
+
+| **Foco de Qualidade** | **Fatores de Variação**                                                         |
+| --------------------- | ------------------------------------------------------------------------------- |
+| Usabilidade           | - Clareza da mensagem do erro ocorrido;<br>- Visibilidade de status do sistema. |
+
+---
+
+| **Hipóteses de *Baseline***                                                                                                                                                                                                                                                                                                                                                             | **Impacto nas hipóteses de *baseline***                                                                                                                                                                                                                                                     |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Distribuição pela clareza das informações:<br><br>- 90% das mensagens de erro possíveis descrevem de forma coerente o real motivo do erro, no mínimo;<br>- Pelo menos 90% das mensagens de erro não mencionam termos relacionados ao funcionamento interno do sistema;<br>- Pelo menos 90% das funcionalidades do AgroMart estão na documentação, tendo a descrição de como utilizá-lo. | Caso a disposição de informações do AgroMart não seja acessível ou não apresentem uma linguagem compreensível, afetará em:<br><br>- Capacidade de identificar o motivo da falha;<br>- Compreensão de como corrigir a falha;<br>- Capacidade de consultar instruções previamente elaboradas; |
+
 
 ## **Métricas Selecionadas:**
 
@@ -59,7 +69,7 @@
     - **Foco da Qualidade:**
         - Externo/Interno.
 
-### **Objetivo de medição 2**
+## **Objetivo de medição 2**
 
 | **Analisar** | AgroMart |
 | --- | --- |
@@ -136,9 +146,15 @@ O uso médio da memória RAM utilizada permanece com variação inferior a 10% a
 
 | **Matrícula** | **Nome** | **Atividade realizada** | **% de contribuição** |
 | --- | --- | --- | --- |
-| 211061583 | Daniel Rodrigues da Rocha | Desenvolvimento dos Objetivos, Questões, diagramas e parcialmente o abstraction sheet |  |
-| 221031149 | Danilo César Tertuliano Melo | Atualização nas métricas do objetivo 2; aplicação de formatação |  |
-| 211041221 | Luan Mateus Cesar Duarte | Elaboração parcial dos fatores de qualidade, fatores de variação e impacto nas hipóteses de baseline do abstraction sheet |  |
-| 200062620 | Pedro Augusto Dourado Izarias | Elaboração parcial das questões, hipóteses, métricas e atualização do diagrama relacionado |  |
-| 211029540 | Pedro Sena Barbosa Holtz Yen | Elaboração parcial das questões, hipóteses e métricas das medições de Usabilidade e Eficiência |  |
-| 211031860 | Victório Lázaro Rocha de Morais | Adição da questão 4 do objetivo 1 e sua hipótese; edição da imagem do objetivo 1 |  |
+| 211061583 | Daniel Rodrigues da Rocha | Desenvolvimento dos Objetivos, Questões, diagramas e parcialmente o abstraction sheet | 16,6 |
+| 221031149 | Danilo César Tertuliano Melo | Atualização nas métricas do objetivo 2; aplicação de formatação | 16,6 |
+| 211041221 | Luan Mateus Cesar Duarte | Elaboração parcial dos fatores de qualidade, fatores de variação e impacto nas hipóteses de baseline do abstraction sheet | 16,6 |
+| 200062620 | Pedro Augusto Dourado Izarias | Elaboração parcial das questões, hipóteses, métricas e atualização do diagrama relacionado | 16,6 |
+| 211029540 | Pedro Sena Barbosa Holtz Yen | Elaboração parcial das questões, hipóteses e métricas das medições de Usabilidade e Eficiência | 16,6 |
+| 211031860 | Victório Lázaro Rocha de Morais | Adição da questão 4 do objetivo 1 e sua hipótese; edição da imagem do objetivo 1 | 16,6 |
+
+**Histórico de Versões**
+
+| **Versão** | **Data**     | **Descrição**                     | **Autor**                                     |
+|------------|--------------|-----------------------------------|-----------------------------------------------|
+| `1.0`      | 02/06/2025   | Criação e estruturação da página  | [Luan Mateus](https://github.com/luanduartee) |
