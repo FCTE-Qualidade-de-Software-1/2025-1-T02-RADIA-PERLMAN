@@ -1,4 +1,4 @@
-# Equipe – Qualidade de Software
+# Radia Perlman – Qualidade de Software
 
 Este repositório tem como objetivo armazenar e documentar os artefatos desenvolvidos pela equipe Radia Perlman, formada por estudantes da Universidade de Brasília (UnB), durante a disciplina de Qualidade de Software.
 
