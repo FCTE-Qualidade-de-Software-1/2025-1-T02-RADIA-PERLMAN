@@ -1,18 +1,12 @@
 /* Custom CSS for the Git Pages documentation site */
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-h1, h2, h3 {
-    color: #3c2c50;
+:root {
+    --md-primary-fg-color: #00cc76;
+    --md-primary-fg-color--light: #a5e887;
+    --md-primary-fg-color--dark: #00aa95;
 }
 
 a {
-    color: #6934db;
+    color: #00aa95;
     text-decoration: none;
 }
 
@@ -21,26 +15,10 @@ a:hover {
 }
 
 header {
-    background: #2c3e50;
-    color: #fff;
     padding: 10px 0;
     text-align: center;
 }
 
 footer {
-    background: #2c3e50;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
 }

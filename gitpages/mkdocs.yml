@@ -1,13 +1,35 @@
-site_name: Radia Perlman
+site_name: Radia Perlman | AgroMart
 nav:
   - Home: index.md
-  - Agromart: sobre.md
-  - Processo Avaliação: processo-avaliacao.md
-  - Abstraction Sheet: abstraction-sheet.md
+  - Sobre o AgroMart: pages/01-agromart/sobre.md
+  - Processo Avaliação de Produto: pages/02-processo/processo-avaliacao.md
+  - GQM:
+      - Definição: pages/03-gqm/definicao.md
+      - Detalhamento: pages/03-gqm/abstraction.md
 extra_css:
   - assets/custom.css
 theme:
   name: material
+
+  palette:
+    - scheme: default
+      primary: 'custom'
+      accent: 'lime'
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Mude para o tema escuro
+        
+    - scheme: slate
+      primary: 'custom'
+      accent: 'lime'
+      toggle:
+        icon: material/toggle-switch
+        name: Mude para o tema claro
+  
+  logo: assets/UnB_Logo.png
+  favicon: assets/UnB_Logo.png
+  highlightjs: true
+
 markdown_extensions:
   - toc:
       permalink: true
