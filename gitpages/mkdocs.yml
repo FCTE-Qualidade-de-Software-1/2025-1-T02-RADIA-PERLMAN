@@ -6,6 +6,7 @@ nav:
   - GQM:
       - Definição: pages/03-gqm/definicao.md
       - Detalhamento: pages/03-gqm/abstraction.md
+  - PSM: pages/04-psm/apresentacao.md
 extra_css:
   - assets/custom.css
 theme:
