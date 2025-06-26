@@ -7,7 +7,6 @@ O Q-Rapids (Quality-Aware Rapid Software Development) é um framework voltado pa
 <a id="fig2">**Figura 1 – Categorização das Métricas Usadas para Análise de Dados no Q-Rapids**</a>
 
 <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-1-T02-RADIA-PERLMAN/refs/heads/main/gitpages/docs/assets/tabela_metricas_qrapids.png">
-![Categorização das Métricas Usadas para Análise de Dados no Q-Rapids](../../assets/tabela_metricas_qrapids.png)
 
 <font size="2"><p style="text-align: center"><b>Autor: CHORAS, Michal. et al (2019)</b></p></font>
 
