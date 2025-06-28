@@ -1,3 +1,5 @@
+<span style="background-color:#00aa95; color:white; font-size:0.8em; font-weight: bold; padding:2px 6px; border-radius:4px;">Versão 1.0</span>
+
 # Processo de Avaliação do Produto
 
 <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;

@@ -1,3 +1,5 @@
+<span style="background-color:#00aa95; color:white; font-size:0.8em; font-weight: bold; padding:2px 6px; border-radius:4px;">Versão 1.0</span>
+
 # **Introdução**
 
 **Objetivo de Negócio do AgroMart**

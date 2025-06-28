@@ -1,6 +1,7 @@
 site_name: Radia Perlman | AgroMart
 nav:
   - Home: index.md
+  - Dashboard PSM/CID Equipe: pages/04-dashboard/dashboard.md
   - Sobre o AgroMart: pages/01-agromart/sobre.md
   - Processo Avaliação de Produto: pages/02-processo/processo-avaliacao.md
   - GQM:
