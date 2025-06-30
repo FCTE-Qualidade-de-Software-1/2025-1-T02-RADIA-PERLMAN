@@ -99,6 +99,93 @@ Em métodos ágeis com foco em entrega contínua de valor, como o Kanban, o cont
 </script>
 ---
 
+## Performance de Processo
+
+## Burndown Chart | Gráfico de Queima
+
+O **Burndown Chart** é uma ferramenta visual utilizada para acompanhar o progresso de uma equipe ao longo de uma sprint ou ciclo de trabalho. Ele mostra a quantidade de tarefas restantes ao longo do tempo, permitindo visualizar o ritmo de execução das atividades e identificar se o time está avançando conforme o esperado.
+
+Por meio da comparação entre a **linha ideal de progresso** (representando a queda esperada de tarefas) e a **linha real** (baseada nas tarefas efetivamente concluídas), é possível identificar atrasos, adiantamentos ou bloqueios no processo de desenvolvimento. Esse gráfico é especialmente útil em métodos ágeis, como o Scrum, pois fornece feedback contínuo sobre o andamento do projeto e contribui para a melhoria da previsibilidade nas entregas.
+
+### Parâmetros
+
+- **Total de Tarefas:** Quantidade total de atividades planejadas para o ciclo.
+- **Linha Ideal:** Representa a redução linear de tarefas ao longo dos dias da sprint, assumindo progresso constante.
+- **Linha Real:** Mostra o número real de tarefas restantes a cada dia, com base na conclusão das atividades.
+- **Datas da Sprint:** Período em que o ciclo está planejado, normalmente delimitado em uma ou duas semanas.
+
+
+<h2>Burndown Chart - Tarefas Restantes por Dia</h2>
+<canvas id="burndownChart" width="400" height="200"></canvas>
+<script>
+  const burndownCtx = document.getElementById('burndownChart').getContext('2d');
+
+  const datasSprint = [
+    '23/06/2025', '24/06/2025', '25/06/2025',
+    '26/06/2025', '27/06/2025', '28/06/2025',
+    '29/06/2025', '30/06/2025'
+  ];
+
+  // Dados reais (tarefas restantes)
+  const tarefasRestantes = [4, 4, 3, 3, 3, 3, 0, 0];
+
+  // Linha ideal de progresso
+  const linhaIdeal = tarefasRestantes.map((_, i, arr) => {
+    const totalTarefas = 4;
+    return Math.max(0, totalTarefas - (totalTarefas / (arr.length - 1)) * i);
+  });
+
+  new Chart(burndownCtx, {
+    type: 'line',
+    data: {
+      labels: datasSprint,
+      datasets: [
+        {
+          label: 'Ideal',
+          data: linhaIdeal,
+          borderColor: 'rgba(0, 200, 0, 0.8)',
+          backgroundColor: 'rgba(0, 200, 0, 0.2)',
+          fill: false,
+          borderDash: [5, 5],
+        },
+        {
+          label: 'Real',
+          data: tarefasRestantes,
+          borderColor: 'rgba(200, 0, 0, 0.8)',
+          backgroundColor: 'rgba(200, 0, 0, 0.2)',
+          fill: false
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        title: {
+          display: true,
+          text: 'Burndown Chart - Radia Perlman'
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          title: {
+            display: true,
+            text: 'Tarefas Restantes'
+          }
+        },
+        x: {
+          title: {
+            display: true,
+            text: 'Dias da Sprint'
+          }
+        }
+      }
+    }
+  });
+</script>
+
+---
+
 **Histórico de Versões**
 
 | **Versão** | **Data**   | **Descrição**                    | **Autor**                                                                                         |
