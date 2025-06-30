@@ -3,14 +3,13 @@
 # Dashboard de PSM/CID da Equipe
 
 ## Calendário e Processo
-
-## Cumulative Flow | Fluxo Cumulatívo
+### Cumulative Flow | Fluxo Cumulatívo
 
 O Fluxo Cumulativo é uma ferramenta visual para acompanhar o andamento do trabalho em um processo de desenvolvimento contínuo. Através de um gráfico que mostra a quantidade total de itens em cada etapa do fluxo ao longo do tempo, é possível ter uma visão clara do volume de trabalho em progresso, do tempo de ciclo e da taxa de entrega. Esse tipo de representação gráfica permite identificar gargalos, sobrecargas e possíveis desequilíbrios entre o início e a conclusão das tarefas em cada fase.
 
 Em métodos ágeis com foco em entrega contínua de valor, como o Kanban, o controle do fluxo de trabalho é essencial para garantir estabilidade e desempenho previsível. O gráfico de fluxo cumulativo (CFD - Cumulative Flow Diagram) ajuda nesse controle ao revelar se as tarefas estão fluindo de maneira equilibrada entre as etapas. Quando o volume de entrada em uma etapa não acompanha o volume de saída, surgem filas ou atrasos que afetam a eficiência da equipe. Manter um fluxo estável, onde a entrada e a saída de trabalho são proporcionais, é um dos princípios para alcançar processos eficientes e sustentáveis.
 
-### Parâmetros:
+#### Parâmetros:
 
 **1. A fazer:** Atividades do backlog do produto que foram aprovados/aceitos para implementação (comprometidos com), mas ainda não foram iniciados. Em geral, eles foram atribuídos a uma iteração ou versão.
 
@@ -20,7 +19,7 @@ Em métodos ágeis com foco em entrega contínua de valor, como o Kanban, o cont
 
 **4. Implantado:** As Atividades concluíram todas as atividades de desenvolvimento definidas pelo processo, incluindo atividades de integração e teste, e foram implantados em uma versão interna ou externa.
 
-### Cumulative Flow da equipe Radia Perlman
+#### Cumulative Flow da equipe Radia Perlman
 
 <canvas id="myChart" width="400" height="200"></canvas>
 
@@ -98,7 +97,6 @@ Em métodos ágeis com foco em entrega contínua de valor, como o Kanban, o cont
     }
   });
 </script>
-
 ---
 
 **Histórico de Versões**
