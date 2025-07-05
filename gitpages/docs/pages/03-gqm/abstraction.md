@@ -133,7 +133,7 @@
     <td colspan="2">
         <ul>
             <p>Se o sistema não for eficiente em uso de infraestrutura e for lento, pode ocasionar em:  </p>
-            <li>Frustração por parte do produtor ao executar operações simples de consulta, edição, exclusão ou inclusão </li>
+            <li>Frustração por parte do produtor ao executar operações simples de criação </li>
             <li>Falha causadora de morte do processo da aplicação</li>
         </ul>
     </td>
