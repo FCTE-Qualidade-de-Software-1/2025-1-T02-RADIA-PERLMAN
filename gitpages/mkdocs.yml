@@ -11,6 +11,7 @@ nav:
   - Cronograma: pages/05-cron/cronograma.md
   - Q-Rapids: pages/06-qrapids/qrapids.md
   - Dashboard PSM/CID Equipe: pages/07-dashboard/dashboard.md
+  - Tutorial para Rodar o Agromart Local: pages/08-agromart-local/agromart-local.md
 extra_css:
   - assets/custom.css
 theme:
