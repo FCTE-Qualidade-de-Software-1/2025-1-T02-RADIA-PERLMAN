@@ -125,8 +125,8 @@
   <tr>
     <td colspan="2">
         <ul>
-            <li>80% das requisições tiveram um tempo de resposta inferior a 100ms</li>
-            <li>95% de todas as consultas disponíveis são retornadas em até 150ms</li>
+            <li>Existem requisições que tiveram um tempo de resposta superior a 4000ms</li>
+            <li>95% de todas as consultas disponíveis são retornadas em até 5000ms</li>
             <li>O uso médio da memória RAM utilizada permanece com variação inferior a 10% ao tratar uma requisição</li>
         </ul>
     </td>
