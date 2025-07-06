@@ -13,7 +13,8 @@ nav:
       - Usabilidade: pages/06-resultados/usabilidade.md
       - Eficiência: pages/06-resultados/eficiencia.md
   - Dashboard PSM/CID Equipe: pages/07-dashboard/dashboard.md
-  - Materiais de Apresentações: pages/08-apresentacoes/apresentacoes.md
+  - Tutorial para Rodar o Agromart Local: pages/08-agromart-local/agromart-local.md
+  - Materiais de Apresentações: pages/09-apresentacoes/apresentacoes.md
 extra_css:
   - assets/custom.css
 theme:

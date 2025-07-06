@@ -4,8 +4,63 @@
 
 ## Questão 1:
 
-## Questão 2: A linguagem da mensagem está adequada ao público-alvo (sem termos técnicos)?
-A questão 2, também relacionada à "Usabilidade" busca quantificar a quantidade de erros que podem trazer cofusão aos usuários por trazer termos técnicos, isto é, funções, variáveis ou componentes internos do software. A métrica utilizada para responder esta questão está descrita no tópico [Definição do GQM](../03-gqm/definicao.md), chamada **Clareza de Mensagens**, cujo recebe dois parâmetros:
+A questão 1 referente ao foco de qualidade “Usabilidade” é referente a completude da descrição das mensagens de erro que um usuário pode receber ao usar as funcionalidades da aplicação, para verificar se as mensagens são significativas e guiam o usuário para uma solução. A métrica usada para medir essa questão consiste na quociente entre o número de funções que descrevem corretamente os erros do software pelo número total de funções.
+
+Rodando a aplicação localmente, a equipe só conseguiu acesso a três funcionalidades que o usuário tem acesso e que retornam mensagens em caso de erro. A primeira é na tela do usuário escolher a CSA que deseja entrar. O usuário só consegue logar caso a CSA seja selecionada.
+
+<center>
+<img src="../assets/mobileAgromart.png"/>
+<br />
+<spam>Figura 1 - Tela de Seleção da CSA</spam>
+<br />
+<spam>Fonte: Autores, 2025</spam>
+</center>
+
+A mensagem que aparece caso se digite o código de uma CSA que não existe é informativa e indica o problema para o usuário. A mensagem é “CSA não encontrada”. Outra funcionalidade analisada foi a de cadastro de um usuário na CSA. Caso o usuário não possa ser cadastrado por algum erro como quebra de critério de aceitação (“senha menor do que 6 caracteres” ou “usuário ou email já cadastrado”), a aplicação sempre retorna a mesma mensagem de erro genérica mostrada na imagem abaixo.
+
+<center>
+<img src="../assets/mobileAgromart2.png"/>
+<br />
+<spam>Figura 2 - Tela de Cadastro do Usuário</spam>
+<br />
+<spam>Fonte: Autores, 2025</spam>
+</center>
+
+A equipe só conseguiu descobrir os motivos dos erros ao fazer as requisições via Postman e vendo as respostas das requisições. Por exemplo, na resposta da requisição de cadastro de usuário na imagem abaixo.
+
+<center>
+<img src="../assets/PostmanAgromart.png"/>
+<br />
+<spam>Figura 3 - Erro Requisição para Cadastro do Usuário</spam>
+<br />
+<spam>Fonte: Autores, 2025</spam>
+</center>
+
+Outra funcionalidade que apresenta mensagem de erro genérica e que não guia o usuário à solução é a da tela de atualização de dados do usuário, que no caso a operação falhar só apresenta o texto “Não foi possível atualizar seus dados”. Com base nas três funcionalidades apresentadas, o valor do quociente entre o número de funções que descrevem corretamente os erros do software pelo número total de funções é ⅓ (aproximadamente 33,33%) sendo 1 a funcionalidade de seleção da CSA. O valor da métrica está bem abaixo do esperado, que era 90%, e embora a equipe só tenha tido acesso a uma pequena amostra de funcionalidades essas funcionalidades são bem importantes para os usuários. 
+Portanto, para melhorar a experiência do usuário, é fundamental substituir mensagens genéricas por mensagens claras e úteis. Uma sugestão da equipe para solucionar esse problema é o front-end da aplicação usar as mensagens retornadas pelas respostas às requisições do back-end sempre que possível, garantindo que o usuário receba informações específicas sobre o que ocorreu. Além disso, é importante que essas mensagens sejam claras e estejam em português, orientando o usuário sobre como resolver o problema ou qual ação tomar a seguir.
+Para resolver esse problema, a equipe desenvolveu uma implementação parcial de código na tela de atualizar dados para demonstrar a ideia sugerida. As alterações no código são mostradas na imagem abaixo.
+
+<center>
+<img src="../assets/resolucao1.png"/>
+<br />
+<spam>Figura 4 - Implementação Parcial de Código para Resolver Problema das Mensagens de Erro Genéricas</spam>
+<br />
+<spam>Fonte: Autores, 2025</spam>
+</center>
+
+O resultado é mostrado na foto abaixo, onde a mensagem de erro gerada pela api é mostrada para o usuário, indicando a causa do erro (no caso da foto, é que o nome de usuário para o qual se deseja trocar já está em uso por outro usuário).
+
+<center>
+<img src="../assets/resultado1.png"/>
+<br />
+<spam>Figura 5 - Demonstração de Monstrar Mensagens de Erro Informativas para o Usuário</spam>
+<br />
+<spam>Fonte: Autores, 2025</spam>
+</center>
+
+
+## Questão 2:
+A questão 2, também relacionada à "Usabilidade" busca quantificar a quantidade de erros que podem trazer confusão aos usuários por trazer termos técnicos, isto é, funções, variáveis ou componentes internos do software. A métrica utilizada para responder esta questão está descrita no tópico [Definição do GQM](../03-gqm/definicao.md), chamada **Clareza de Mensagens**, cujo recebe dois parâmetros:
 
 - A = Número de mensagens que são fáceis de entender;
 - B = Número total de mensagens.
