@@ -12,6 +12,7 @@ nav:
   - Resultados Obtidos:
       - Usabilidade: pages/06-resultados/usabilidade.md
       - Eficiência: pages/06-resultados/eficiencia.md
+      - Problemas Encontrados: pages/06-resultados/problemasEncontrados.md
   - Dashboard PSM/CID Equipe: pages/07-dashboard/dashboard.md
   - Tutorial para Rodar o Agromart Local: pages/08-agromart-local/agromart-local.md
   - Materiais de Apresentações: pages/09-apresentacoes/apresentacoes.md
