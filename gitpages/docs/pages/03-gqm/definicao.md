@@ -13,17 +13,9 @@
 
 ### Questões e Hipóteses para alcançar o objetivo 1:
 
-**Q1.** Os usuários consumidores compreendem as mensagens do sistema durante o processo de aquisição de um produto no AgroMart?
+**Q1.** As mensagens orientam à solução do problema?
 
 - **Hipótese da Q1.** 90% das mensagens de erro possíveis descrevem de forma coerente o real motivo do erro, no mínimo.
-
-**Q2.** A linguagem da mensagem está adequada ao público-alvo (sem termos técnicos)?
-
-- **Hipótese da Q2.** Pelo menos 90% das mensagens de erro não mencionam termos relacionados ao funcionamento interno do sistema.
-
-**Q3.** A documentação da AgroMart oferece ajuda para qualquer tipo de operação no software?
-
-- **Hipótese da Q3.** Pelo menos 90% das funcionalidades da AgroMart estão na documentação, tendo a descrição de como utilizá-lo.
 
 <br/><br/>
 
@@ -75,4 +67,4 @@
 |------------|--------------|-----------------------------------|---------------------------------------------------|
 | `1.0`      | 02/06/2025   | Criação e estruturação da página  | [Luan Mateus](https://github.com/luanduartee)     |
 | `1.1`      | 03/06/2025   | Reorganização dos Conteúdo GQM    | [Daniel Rodrigues](https://github.com/DanielRogs) |
-
+| `1.2`      | 07/07/2025   | Apagando métricas Q2 e Q3 de Usabilidade e arrumando texto da Q1    | [Victório Lázaro](https://github.com/Victor-oss) |

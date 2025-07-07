@@ -2,7 +2,7 @@
 
 # Resultados Obtidos | Eficiência
 
-## Questão 1: 
+## Questão 1: O tempo de resposta do sistema é adequado para operações de edição e exclusão?
 
 Para a questão 1, que aborda a eficiência, avaliamos a velocidade de resposta do sistema às operações de criação pelo usuário, medida em milissegundos. Especificamente, o endpoint de criação de CSA foi o escolhida para essa análise, apresentando uma latência de 5658,968 ms.
 
@@ -19,7 +19,7 @@ A latência registrada para o endpoint de criação de CSA é, sem dúvida, uma 
 
 Dessa forma, podemos concluir que a hipótese de baseline "Existem requisições que tiveram um tempo de resposta superior a 4000ms?" se confirma, tornando-se necessário incluir otimizações no banco de dados, como criação de índices ou reestruturação de queries e melhorias no código da aplicação para reduzir complexidade ou chamadas desnecessárias.
 
-## Questão 2:
+## Questão 2: O sistema realiza consultas ao banco de dados de forma eficiente?
 
 A questão 2 aborda otimização das consultas ao banco de dados, que não só é crucial para o consumo adequado de recursos computacionais e financeiros, mas também para a satisfação do usuário. 
 
@@ -56,7 +56,7 @@ Já os de índices do api-dicionario tem apenas dois índices, e apenas um deles
 Dessa forma, apesar de ainda possibilitar algumas melhorias, podemos concluir que a hipótese "95% de todas as consultas disponíveis são retornadas em até 5000ms" é correta, atestando uma eficiência mínima que permite que o usuário realize ações no sistema sem maiores empecilhos.
 
 
-## Questão 3:
+## Questão 3: O sistema de cadastro é eficiente na gestão de recursos de memória?
 
 A questão 3 está relacionada à variação percentual do uso da memória RAM durante a operação de cadastro pelo usuário. Usando como base uma máquina equipada com 1 GB de memória, permitindo uma análise que abrange tanto cenários de memória limitada quanto de alta disponibilidade, tornando os resultados mais representativos. Já os dados foram obtidos através do uso da endpoint de cadastro de CSA, onde constatamos o uso líquido de memória e consequentemente sua variação percentual. 
 
@@ -80,3 +80,4 @@ Quanto a hipótese relacionada a esse métrica específica, que diz: O uso médi
 | ---------- | ---------- | -------------------------------- | ------------------------------------------------- |
 | `1.0`      | 05/07/2025 | Criação e estruturação da página | [Daniel Rodrigues](https://github.com/DanielRogs) |
 | `1.1`      | 07/07/2025 | Análise das métricas de eficiência e escrita do texto | [Pedro Izarias](https://github.com/Izarias), [Pedro Sena](https://github.com/pedrosena21) |
+| `1.2`      | 07/07/2025   | Adicionando texto das perguntas    | [Victório Lázaro](https://github.com/Victor-oss) |

@@ -68,23 +68,6 @@
         - B = Número Total de Funções
     - **Foco da Medição:** Externo/Interno
 
-2. **Completude da Documentação do Usuário e Facilidade de Uso**
-    - **Descrição:**
-        - Pertence à métrica de Usabilidade e seu objetivo é determinar quantas funcionalidades a documentação ensina ao usuário em como utilizar.
-    - **Elementos de Medição da Qualidade:**
-        - A = Número de Funcionalidades descritas na documentação;
-        - B = Número de Funcionalidades totais.
-    - **Foco da Qualidade:** Externo/Interno.
-
-3. **Clareza de Mensagens**
-    - **Descrição:**
-        - Pertence à métrica de Usabilidade, e seu objetivo é descrever quantas mensagens do sistema são de fácil entendimento.
-    - **Elementos de Medição da Qualidade:**
-        - A = Número de mensagens que são fáceis de entender;
-        - B = Número total de mensagens.
-    - **Foco da Qualidade:**
-        - Externo/Interno.
-
 ## Abstraction sheet do Objetivo de Medição 2
 
 <table>
@@ -177,3 +160,4 @@
 | **Versão** | **Data**     | **Descrição**                     | **Autor**                                         |
 |------------|--------------|-----------------------------------|---------------------------------------------------|
 | `1.0`      | 03/06/2025   | Reorganização dos Conteúdo GQM    | [Daniel Rodrigues](https://github.com/DanielRogs) |
+| `1.1`      | 07/07/2025   | Apagando métricas Q2 e Q3 de Usabilidade    | [Victório Lázaro](https://github.com/Victor-oss) |
