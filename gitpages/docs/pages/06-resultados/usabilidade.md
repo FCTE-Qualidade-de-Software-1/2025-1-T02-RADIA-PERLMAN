@@ -196,7 +196,45 @@ O resultado indica, portanto, valores **abaixo** da hipótese esperada para esta
 
 ## Questão 3:
 
+A questão analisada está relacionada à métrica de Usabilidade, com foco na clareza das mensagens exibidas pelo sistema. O objetivo desta métrica é avaliar se as mensagens apresentadas ao usuário são de fácil entendimento, auxiliando-o na compreensão do problema ocorrido e, quando possível, indicando como solucioná-lo.
+
+Durante os testes no ambiente da aplicação, foram identificadas três mensagens principais que aparecem em situações de erro nas funcionalidades acessadas. São elas:
+
+**"Ops, Não foi possível carregar as lojas"**: Esta mensagem não especifica o motivo da falha (por exemplo: problema de rede, falha no servidor, ou dados inconsistentes). Assim, o usuário não sabe se deve tentar novamente, verificar sua conexão ou entrar em contato com o suporte.
+
+<center>
+<img src="../assets/mensagem_lojas.jpeg" width="350"/>
+<br />
+<spam>Figura 6 - Mensagem de erro de não carregamento das lojas</spam>
+<br />
+<spam>Fonte: Autores, 2025</spam>
+</center>
+
+**"Erro ao cadastrar usuário”**: Também trata-se de uma mensagem genérica, sem explicar se o erro ocorreu por causa de falha de validação (ex: senha fraca, e-mail inválido), usuário já existente ou outro fator.
+
+<center>
+<img src="../assets/mensagem_usuario.jpeg" width="350"/>
+<br />
+<spam>Figura 7 - Mensagem de erro no cadastro de usuário</spam>
+<br />
+<spam>Fonte: Autores, 2025</spam>
+</center>
+
+**"Ops :( Não foi possível atualizar seus dados"**: Novamente, a mensagem não orienta o usuário sobre o que causou a falha, nem sugere um próximo passo.
+
+<center>
+<img src="../assets/mensagem_dados.jpeg" width="350"/>
+<br />
+<spam>Figura 8 - Mensagem de erro de atualização dos dados</spam>
+<br />
+<spam>Fonte: Autores, 2025</spam>
+</center>
+
+
+
 ## Conclusão:
+
+Fica evidente, portanto, que durante a execução dos testes realizados, principalmente nas etapas de configuração e autenticação do Agromart, enfrentamos situações em que as mensagens retornadas pelo sistema não foram claras para indicar a causa real dos problemas, dificultando a identificação de erros como o cadastramento de um novo usuário na plataforma. Assim como observado nas mensagens de erro genéricas analisadas nesta questão de usabilidade, notamos que, em diversos momentos, foi necessário recorrer a ferramentas externas como o Postman para compreender o que realmente estava ocorrendo, evidenciando a importância de mensagens mais claras e orientativas para melhorar a experiência dos usuários e facilitar a resolução de problemas no uso diário do sistema.
 
 ---
 
