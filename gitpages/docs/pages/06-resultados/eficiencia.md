@@ -17,7 +17,7 @@ Para a questão 1, que aborda a eficiência, avaliamos a velocidade de resposta 
 
 A latência registrada para o endpoint de criação de CSA é, sem dúvida, uma preocupação significativa sob o ponto de vista da eficiência e da experiência do usuário. Um tempo de resposta superior a cinco segundos não apenas compromete severamente a satisfação do usuário, que pode abandonar a operação por frustração, mas também indica a presença de gargalos críticos na arquitetura ou implementação da aplicação, que podem incluir desde consultas lentas ao banco de dados até complexidades excessivas na lógica de negócios ou dependências externas ineficientes.
 
-Dessa forma, podemos concluir que a hipótese de baseline …
+Dessa forma, podemos concluir que a hipótese de baseline "Existem requisições que tiveram um tempo de resposta superior a 4000ms?" se confirma, tornando-se necessário incluir otimizações no banco de dados, como criação de índices ou reestruturação de queries e melhorias no código da aplicação para reduzir complexidade ou chamadas desnecessárias.
 
 ## Questão 2:
 
@@ -53,7 +53,7 @@ Já os de índices do api-dicionario tem apenas dois índices, e apenas um deles
 <spam>Fonte: Autores, 2025</spam>
 </center>
 
-Dessa forma, podemos concluir que a hipótese …
+Dessa forma, apesar de ainda possibilitar algumas melhorias, podemos concluir que a hipótese "95% de todas as consultas disponíveis são retornadas em até 5000ms" é correta, atestando uma eficiência mínima que permite que o usuário realize ações no sistema sem maiores empecilhos.
 
 
 ## Questão 3:
@@ -69,6 +69,7 @@ A questão 3 está relacionada à variação percentual do uso da memória RAM d
 </center>
 
 A variação percentual do uso de memória RAM que ocorreu durante essa requisição, considerando um computador com 1 GB de RAM, é de aproximadamente 0.084% se considerarmos a memória física que o processo está usando (rss). Dessa maneira, podemos afirmar positivamente à questão relacionada que diz: O sistema de cadastro é eficiente na gestão de recursos de memória?
+Quanto a hipótese relacionada a esse métrica específica, que diz: O uso médio da memória RAM utilizada permanece com variação inferior a 10% ao tratar uma requisição, foi confirmada com a análise da endpoint supracitada com margem suficientemente grande para que o usuário não tenha qualquer dificuldade quando realizadas tarefas desse tipo.
 
 
 ---
@@ -78,3 +79,4 @@ A variação percentual do uso de memória RAM que ocorreu durante essa requisi�
 | **Versão** | **Data**   | **Descrição**                    | **Autor**                                         |
 | ---------- | ---------- | -------------------------------- | ------------------------------------------------- |
 | `1.0`      | 05/07/2025 | Criação e estruturação da página | [Daniel Rodrigues](https://github.com/DanielRogs) |
+| `1.1`      | 07/07/2025 | Análise das métricas de eficiência e escrita do texto | [Pedro Izarias](https://github.com/Izarias), [Pedro Sena](https://github.com/pedrosena21) |
