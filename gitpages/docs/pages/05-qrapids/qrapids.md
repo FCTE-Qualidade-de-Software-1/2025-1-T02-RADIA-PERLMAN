@@ -14,7 +14,7 @@ O Q-Rapids (Quality-Aware Rapid Software Development) é um framework voltado pa
 
 ## Plano para Obter as Métricas do Objetivo de Usabilidade usando Q-Rapids
 
-A usabilidade se refere a facilidade com que usuários podem usar um sistema ou aplicativo de software. A usabilidade também é um dos objetivos de medição desse trabalho. Portanto, depois do estudo sobre Q-Rapids e discussão interna, o grupo decidiu não alterar as questões e as métricas relacionadas a usabilidade declaradas [aqui](../03-gqm/abstraction.md#abstraction-sheet-do-objetivo-de-medição-1) porque vamos usar o backlog (um dos tipos de fontes usada pelo Q-Rapids) para fazer a medição da questão 1 de usabilidade.
+A usabilidade se refere a facilidade com que usuários podem usar um sistema ou aplicativo de software. A usabilidade também é um dos objetivos de medição desse trabalho. Portanto, depois do estudo sobre Q-Rapids e discussão interna, o grupo decidiu não alterar as questões e as métricas relacionadas a usabilidade declaradas no [Detalhamento do GQM](../03-gqm/abstraction.md#abstraction-sheet-do-objetivo-de-medição-1) porque vamos usar o backlog (um dos tipos de fontes usada pelo Q-Rapids) para fazer a medição da questão 1 de usabilidade.
 
 ## Plano para Obter as Métricas do Objetivo de Eficiência usando Q-Rapids
 
