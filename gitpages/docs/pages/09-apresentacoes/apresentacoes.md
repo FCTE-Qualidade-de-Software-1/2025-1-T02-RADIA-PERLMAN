@@ -29,6 +29,17 @@ O conteúdo entregue na segunda unidade da disciplina popde ser consultada neste
 </div>
 <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGp-EoX3_w&#x2F;b4t6mzq7Gi_kq7MsqfZAbg&#x2F;view?utm_content=DAGp-EoX3_w&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">PSM - Qualidade do Produto</a> by Daniel Rodrigues
 
+## Tabela de Contribuição
+
+| Matrícula   | Nome do Aluno                        | % de Contribuição |
+|-------------|--------------------------------------|--------------------|
+| 211061583   | Daniel Rodrigues da Rocha            | 16,66%             |
+| 221031149   | Danilo César Tertuliano Melo         | 16,66%             |
+| 211041221   | Luan Mateus Cesar Duarte             | 16,66%             |
+| 200062620   | Pedro Augusto Dourado Izarias        | 16,66%             |
+| 211029540   | Pedro Sena Barbosa Holtz Yen         | 16,66%             |
+| 211031860   | Victório Lázaro Rocha de Morais      | 16,66%             |
+
 
 ---
 
@@ -37,3 +48,4 @@ O conteúdo entregue na segunda unidade da disciplina popde ser consultada neste
 | **Versão** | **Data**   | **Descrição**                    | **Autor**                        |
 | ---------- | ---------- | -------------------------------- | -------------------------------- |
 | `1.0`      | 05/07/2025 | Criação e estruturação da página | [Daniel Rodrigues](https://github.com/DanielRogs) |
+| `1.1`      | 08/07/2025 | Adição da tabela de contribuição | [Danilo César](https://github.com/DaniloCTM) |
