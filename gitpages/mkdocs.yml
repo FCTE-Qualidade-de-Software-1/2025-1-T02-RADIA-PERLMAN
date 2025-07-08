@@ -2,20 +2,23 @@ site_name: Radia Perlman | AgroMart
 docs_dir: docs
 nav:
   - Home: index.md
-  - Sobre o AgroMart: pages/01-agromart/sobre.md
-  - Propósito e Processo de Avaliação de Produto: pages/02-processo/processo-avaliacao.md
-  - Especificação da Avaliação pelo GQM:
-      - Definição: pages/03-gqm/definicao.md
-      - Abstraction Sheet: pages/03-gqm/abstraction.md
-  - Projeção da Avaliação e Cronograma: pages/04-cron/cronograma.md
-  - Q-Rapids: pages/05-qrapids/qrapids.md
-  - Resultados Obtidos:
-      - Usabilidade: pages/06-resultados/usabilidade.md
-      - Eficiência: pages/06-resultados/eficiencia.md
-      - Problemas Encontrados: pages/06-resultados/problemasEncontrados.md
-  - Dashboard PSM/CID Equipe: pages/07-dashboard/dashboard.md
-  - Tutorial para Rodar o Agromart Local: pages/08-agromart-local/agromart-local.md
-  - Materiais de Apresentações: pages/09-apresentacoes/apresentacoes.md
+  - Nível 1:
+    - Sobre o AgroMart: pages/01-agromart/sobre.md
+    - Propósito e Processo de Avaliação de Produto: pages/02-processo/processo-avaliacao.md
+  - Nível 2:
+    - Especificação da Avaliação pelo GQM: pages/03-gqm/definicao.md
+    - Abstraction Sheet - GQM: pages/03-gqm/abstraction.md
+    - Q-Rapids: pages/05-qrapids/qrapids.md
+    - Projeção da Avaliação e Cronograma: pages/04-cron/cronograma.md
+  - Nível 3:
+    - Análises de Usabilidade: pages/06-resultados/usabilidade.md
+    - Análises de Eficiência: pages/06-resultados/eficiencia.md
+    - Problemas Encontrados: pages/06-resultados/problemasEncontrados.md
+  - Nível 4:
+    - Dashboard PSM/CID Equipe: pages/07-dashboard/dashboard.md
+    - Tutorial para Rodar o Agromart Local: pages/08-agromart-local/agromart-local.md
+  - Outros:
+    - Materiais de Apresentações: pages/09-apresentacoes/apresentacoes.md
 extra_css:
   - assets/custom.css
 theme:
