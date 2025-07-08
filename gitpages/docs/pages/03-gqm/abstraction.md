@@ -1,6 +1,6 @@
-<span style="background-color:#00aa95; color:white; font-size:0.8em; font-weight: bold; padding:2px 6px; border-radius:4px;">Versão 1.0</span>
+<span style="background-color:#00aa95; color:white; font-size:0.8em; font-weight: bold; padding:2px 6px; border-radius:4px;">Versão 1.1</span>
 
-# Detalhamento do Plano de Medição:
+# Abstraction Sheet:
 
 ## Abstraction sheet do Objetivo de Medição 1
 
@@ -15,7 +15,7 @@
     <td>Proteção contra erros do usuário</td>
     <td>Avaliar</td>
     <td>Usabilidade</td>
-    <td>Usuário consumidor (Co-Produtor)</td>
+    <td>Equipe de Desenvolvimento</td>
   </tr>
   <tr>
     <th colspan="2">Foco da Qualidade</th>
@@ -25,6 +25,11 @@
     <td colspan="2">
         <ul>
             <li>Usabilidade</li>
+            <li>Funcionalidade</li>
+            <li>Confiabilidade</li>
+            <li>Portabilidade</li>
+            <li>Eficiência</li>
+            <li>Completitude</li>
         </ul>
     </td>
     <td colspan="2">
@@ -58,15 +63,9 @@
   </tr>
 </table>
 
-### Métricas Selecionadas para o Objetivo de Medição 1
+#### Relação entre Objetivos, Questões e Métricas - Usabilidade
 
-1. **Completude de Descrição de Mensagens**
-    - **Descrição:**
-        - Pertence à métrica de Usabilidade e seu objetivo é determinar a taxa de funcionalidades que apresentam uma resposta que, de fato, guie o usuário a uma solução em casos de erros.
-    - **Elementos de Medição da Qualidade:**
-        - A = Número de Funções que descrevem corretamente os erros do software;
-        - B = Número Total de Funções
-    - **Foco da Medição:** Externo/Interno
+![Métricas Usabilidade](./assets/metricas.png)
 
 ## Abstraction sheet do Objetivo de Medição 2
 
@@ -81,7 +80,7 @@
     <td>Interface Web do Produtor</td>
     <td>Avaliar</td>
     <td>Eficiência</td>
-    <td>Usuário Produtor (Agricultor)</td>
+    <td>Equipe de Desenvolvimento</td>
   </tr>
   <tr>
     <th colspan="2">Foco da Qualidade</th>
@@ -91,6 +90,11 @@
     <td colspan="2">
         <ul>
             <li>Eficiência</li>
+            <li>Usabilidade</li>
+            <li>Funcionalidade</li>
+            <li>Confiabilidade</li>
+            <li>Portabilidade</li>
+            <li>Completitude</li>
         </ul>
     </td>
     <td colspan="2">
@@ -123,34 +127,10 @@
   </tr>
 </table>
 
-### Métricas Selecionadas para o Objetivo de Medição 2
-
-1. **Tempo de resposta (latência) por requisição em ms**
-    - **Descrição:**
-        - Pertence à métrica de Eficiência e seu objetivo é determinar o tempo de resposta por requisição em milissegundos.
-    - **Elementos de Medição da Qualidade:**
-        - T = Tempo de execução em milissegundos (ms)
-    - **Foco da Medição:** Externo/Interno.
-2. **Tempo de execução da consulta SQL em ms**
-    - **Descrição:**
-        - Pertence à métrica de Eficiência e seu objetivo é determinar o tempo decorrido durante uma consulta feita ao banco de dados pelo usuário através do sistema.
-    - **Elementos de Medição da Qualidade:**
-        - T = Tempo de execução em milissegundos (ms)
-    - **Foco da Qualidade:** Externo/Interno.
-3. **Variação percentual de uso de memória utilizada**
-    - **Descrição:**
-        - Pertence à métrica de Eficiência, e seu objetivo é determinar a variação no uso de memória RAM pelo sistema ao processar uma requisição.
-    - **Elementos de Medição da Qualidade:**
-        - M₁ = Memória utilizada antes (em MB)
-        - M₂ = Memória utilizada depois (em MB)
-        - ΔM% = ((M₂ - M₁) / M₁) * 100
-    - **Foco da Qualidade:** Externo/Interno.
-
 <br/>
 
-#### Relação entre Objetivos, Questões e Métricas
+#### Relação entre Objetivos, Questões e Métricas - Eficiência
 
-![Métricas Usabilidade](./assets/metricas.png)
 ![Métricas Eficiência](./assets/metricas2.png)
 
 ---

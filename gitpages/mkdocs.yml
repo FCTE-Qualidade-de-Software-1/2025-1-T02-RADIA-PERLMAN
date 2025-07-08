@@ -6,7 +6,7 @@ nav:
   - Propósito e Processo de Avaliação de Produto: pages/02-processo/processo-avaliacao.md
   - Especificação da Avaliação pelo GQM:
       - Definição: pages/03-gqm/definicao.md
-      - Detalhamento: pages/03-gqm/abstraction.md
+      - Abstraction Sheet: pages/03-gqm/abstraction.md
   - Projeção da Avaliação e Cronograma: pages/04-cron/cronograma.md
   - Q-Rapids: pages/05-qrapids/qrapids.md
   - Resultados Obtidos:

@@ -54,13 +54,13 @@ Em métodos ágeis com foco em entrega contínua de valor, como o Kanban, o cont
               fill: true
           }, {
               label: 'Completo',
-              data: [0, 0, 0, 0, 1, 2, 0, 0, 0, 0, 4, 5],
+              data: [0, 0, 0, 0, 1, 2, 0, 0, 0, 0, 4, 6],
               borderColor: 'rgb(158, 3, 3)',
               backgroundColor: 'rgba(158, 3, 3, 0.74)',
               fill: true
           }, {
               label: 'Em Progresso',
-              data: [0, 3, 3, 3, 2, 0, 0, 3, 3, 3, 2, 1],
+              data: [0, 3, 3, 3, 2, 0, 0, 3, 3, 3, 2, 0],
               borderColor: 'rgb(182, 194, 75)',
               backgroundColor: 'rgba(182, 194, 75, 0.74)',
               fill: true
@@ -119,22 +119,16 @@ Por meio da comparação entre a **linha ideal de progresso** (representando a q
 <canvas id="burndownChart" width="400" height="200"></canvas>
 <script>
   const burndownCtx = document.getElementById('burndownChart').getContext('2d');
-
   const datasSprint = [
     '23/06/2025', '24/06/2025', '25/06/2025',
     '26/06/2025', '27/06/2025', '28/06/2025',
     '29/06/2025', '30/06/2025'
   ];
-
-  // Dados reais (tarefas restantes)
   const tarefasRestantes = [4, 4, 3, 3, 3, 3, 0, 0];
-
-  // Linha ideal de progresso
   const linhaIdeal = tarefasRestantes.map((_, i, arr) => {
     const totalTarefas = 4;
     return Math.max(0, totalTarefas - (totalTarefas / (arr.length - 1)) * i);
   });
-
   new Chart(burndownCtx, {
     type: 'line',
     data: {
@@ -177,6 +171,72 @@ Por meio da comparação entre a **linha ideal de progresso** (representando a q
           title: {
             display: true,
             text: 'Dias da Sprint'
+          }
+        }
+      }
+    }
+  });
+</script>
+
+## Burndown Chart - Novas Tarefas Recentes
+
+O gráfico abaixo apresenta o acompanhamento das três tarefas mais recentes do cronograma, considerando o período de 01/07/2025 a 08/07/2025. Ele mostra a evolução diária da quantidade de tarefas restantes, permitindo visualizar o ritmo de conclusão. Duas tarefas foram concluídas em 07/07/2025 e a última em 08/07/2025, demonstrando um fluxo de entrega consistente.
+
+<canvas id="burndownNovasTarefas" width="400" height="200"></canvas>
+<script>
+  const datasNovas = [
+    '01/07/2025', '02/07/2025', '03/07/2025', '04/07/2025',
+    '05/07/2025', '06/07/2025', '07/07/2025', '08/07/2025'
+  ];
+  // Total de tarefas: 3
+  // Status: nenhuma concluída até 06/07, 2 concluídas em 07/07, 1 concluída em 08/07
+  const tarefasRestantesNovas = [3, 2, 2, 2, 1, 1, 1, 0];
+  const linhaIdealNovas = tarefasRestantesNovas.map((_, i, arr) => {
+    const totalTarefas = 3;
+    return Math.max(0, totalTarefas - (totalTarefas / (arr.length - 1)) * i);
+  });
+  new Chart(document.getElementById('burndownNovasTarefas').getContext('2d'), {
+    type: 'line',
+    data: {
+      labels: datasNovas,
+      datasets: [
+        {
+          label: 'Ideal',
+          data: linhaIdealNovas,
+          borderColor: 'rgba(0, 200, 0, 0.8)',
+          backgroundColor: 'rgba(0, 200, 0, 0.2)',
+          fill: false,
+          borderDash: [5, 5],
+        },
+        {
+          label: 'Real',
+          data: tarefasRestantesNovas,
+          borderColor: 'rgba(200, 0, 0, 0.8)',
+          backgroundColor: 'rgba(200, 0, 0, 0.2)',
+          fill: false
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        title: {
+          display: true,
+          text: 'Burndown Chart - Novas Tarefas Recentes'
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          title: {
+            display: true,
+            text: 'Tarefas Restantes'
+          }
+        },
+        x: {
+          title: {
+            display: true,
+            text: 'Dias'
           }
         }
       }

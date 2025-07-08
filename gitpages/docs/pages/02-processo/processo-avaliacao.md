@@ -33,12 +33,12 @@ O objetivo da Equipe Radia Perlman após o fim do processo de avaliação é apo
 
 | **Aspecto da Qualidade** | **Ênfase**           |
 |--------------------------|----------------------|
+| Usabilidade              | 5 - Grande Interesse |
+| Eficiência               | 5 - Grande Interesse   |
 | Funcionalidade           | 4 - Largo Interesse  |
 | Confiabilidade           | 4 - Largo Interesse  |
-| Usabilidade              | 5 - Grande Interesse |
-| Portabilidade            | 2 - Baixo Interesse  |
-| Eficiência               | 2 - Baixo Interese   |
 | Completitude             | 3 - Médio Interesse  |
+| Portabilidade            | 2 - Baixo Interesse  |
 
 ## Requisitos para a Execução da Avaliação:
 

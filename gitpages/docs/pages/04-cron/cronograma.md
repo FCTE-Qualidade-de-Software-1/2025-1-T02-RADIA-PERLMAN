@@ -65,22 +65,22 @@ Para garantir uma boa organização e dividir bem as responsabilidades entre os 
         <td>29/06/25</td>
       </tr>
       <tr>
-        <td>Fazer medição da Q1 de Usabilidade</td>
-        <td><a href="https://github.com/Victor-oss/">Victório Lázaro</a></td>
+        <td>Fazer medição das questões de Usabilidade</td>
+        <td><a href="https://github.com/Victor-oss/">Victório Lázaro</a>, <a href="https://github.com/DanielRogs">Daniel Rodrigues</a> e <a href="https://github.com/luanduartee">Luan Mateus</a></td>
         <td>07/07/25</td>
-        <td></td>
+        <td>07/07/25</td>
       </tr>
       <tr>
-        <td>Fazer medição da Q2 de Usabilidade</td>
-        <td><a href="https://github.com/DanielRogs">Daniel Rodrigues</a></td>
+        <td>Fazer medição das Questões de Eficiência</td>
+        <td><a href="https://github.com/Izarias">Pedro Augusto</a> e <a href="https://github.com/pedrosena21">Pedro Sena</a></td>
         <td>07/07/25</td>
-        <td></td>
+        <td>07/07/25</td>
       </tr>
       <tr>
-        <td>Fazer medição da Q3 de Usabilidade</td>
+        <td>Fazer correções nas documentações após ponto de controle</td>
         <td><a href="https://github.com/luanduartee">Luan Mateus</a></td>
-        <td>07/07/25</td>
-        <td></td>
+        <td>08/07/25</td>
+        <td>08/07/25</td>
       </tr>
     </tbody>
   </table>
@@ -99,3 +99,71 @@ Para garantir uma boa organização e dividir bem as responsabilidades entre os 
 | `1.0`      | 25/06/2025 | Criação do cronograma                                                                                                                                                                                                                                          | [Victório Lázaro](https://github.com/Victor-oss) |
 | `1.1`      | 25/06/2025 | Alteração da primeira atividade do cronograma para ser só um estudo sobre o Q-Rapids; criação das duas tarefas relacionadas a definição das métricas dos objetivos de Eficiência e Usabilidade; criação da tarefa relacionada a definição das métricas PSM/CID | [Victório Lázaro](https://github.com/Victor-oss) |
 | `1.2`      | 07/07/2025 | Adição e atribuição das atividades envolvendo as medições das questões de Usabilidade                                                                                                                                                                          | [Victório Lázaro](https://github.com/Victor-oss) |
+
+## Novo Burndown Chart das Tarefas Recentes
+
+O gráfico abaixo mostra o acompanhamento visual da finalização das tarefas adicionadas recentemente ao cronograma. O burndown chart permite visualizar rapidamente o ritmo de conclusão das atividades, comparando o progresso real com o ideal, facilitando a identificação de possíveis atrasos ou adiantamentos.
+
+### Burndown Chart - Tarefas Recentes
+
+<canvas id="burndownRecentes" width="400" height="200"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const datasRecentes = [
+    '07/07/2025', '08/07/2025'
+  ];
+  // Total de tarefas recentes: 3
+  // Situação: 2 concluídas em 07/07, 1 concluída em 08/07
+  const tarefasRestantesRecentes = [1, 0];
+  const linhaIdealRecentes = tarefasRestantesRecentes.map((_, i, arr) => {
+    const totalTarefas = 3;
+    return Math.max(0, totalTarefas - (totalTarefas / (arr.length - 1)) * i);
+  });
+  new Chart(document.getElementById('burndownRecentes').getContext('2d'), {
+    type: 'line',
+    data: {
+      labels: datasRecentes,
+      datasets: [
+        {
+          label: 'Ideal',
+          data: linhaIdealRecentes,
+          borderColor: 'rgba(0, 200, 0, 0.8)',
+          backgroundColor: 'rgba(0, 200, 0, 0.2)',
+          fill: false,
+          borderDash: [5, 5],
+        },
+        {
+          label: 'Real',
+          data: tarefasRestantesRecentes,
+          borderColor: 'rgba(200, 0, 0, 0.8)',
+          backgroundColor: 'rgba(200, 0, 0, 0.2)',
+          fill: false
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        title: {
+          display: true,
+          text: 'Burndown Chart - Tarefas Recentes'
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          title: {
+            display: true,
+            text: 'Tarefas Restantes'
+          }
+        },
+        x: {
+          title: {
+            display: true,
+            text: 'Dias'
+          }
+        }
+      }
+    }
+  });
+</script>
