@@ -6,6 +6,8 @@ Durante o trabalho, a equipe encontrou um problema com o Agromart relacionado à
 
 Esse tutorial é importante porque uma documentação clara e objetiva sobre como rodar um sistema open-source é essencial para garantir que outros desenvolvedores consigam contribuir, testar ou usar o projeto com facilidade. Sem instruções precisas, o tempo gasto tentando entender como o projeto funciona pode desmotivar colaboradores e dificultar sua adoção. Uma boa documentação torna o projeto mais acessível e colaborativo, ajudando a construir uma comunidade ativa em torno dele.
 
+Também foram encontrados problemas através das análises feitas sobre as métricas definidas para o trabalho, sendo um deles a alta latência para requisições feitas para a api, mais precisamente, de tempo superior a 4000ms, provando a necessidade de melhorias no banco de dados e na aplicação pela equipe do agromart para que solucione o problema.
+
 
 ---
 
@@ -14,3 +16,4 @@ Esse tutorial é importante porque uma documentação clara e objetiva sobre com
 | **Versão** | **Data**   | **Descrição**                    | **Autor**                                         |
 | ---------- | ---------- | -------------------------------- | ------------------------------------------------- |
 | `1.0`      | 05/07/2025 | Criação e estruturação da página | [Daniel Rodrigues](https://github.com/DanielRogs) |
+| `1.1`      | 08/07/2025 | Adição de problema encontrado | [Pedro Izarias](https://github.com/Izarias) |
