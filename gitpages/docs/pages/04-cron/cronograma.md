@@ -12,9 +12,12 @@ Para a execução da avaliação de qualidade do software AgroMart, será necess
 ### Recursos de Software
 
 - **Aplicação AgroMart:** Acesso a uma versão estável do software para a realização dos testes.
-- **Framework Q-Rapids:** Utilização do Q-Rapids para a definição, coleta e análise de métricas de qualidade, conforme detalhado na seção GQM.
+- **Framework Q-Rapids:** Utilização do Q-Rapids para a definição, coleta e análise de métricas de qualidade, conforme detalhado na seção [Q-Rapids](../05-qrapids/qrapids.md).
 - **Ferramentas de Coleta de Dados:**
-Ferramentas para medição de tempo de resposta, consumo de CPU e memória da aplicação sob diferentes cargas.
+    1. **AgroMart:** Executado Localmente na máquina para permitir a observação de componentes e elementos na interface para usabilidade.
+    2. **Insomnia:** Utilizado para simular requisições de usuário ao banco de dados e medir o tempo de resposta desde a Requisição até a Resposta do sistema.
+    3. **Função MemoryUsage | JavaScript:** Função nativa da Liguagem JavaScript que permite visualizar o consumo de Memória RSS (Resident Set Size) alocada à processos do sistema.
+    4. **Morgan:** Biblioteca adicionada dentro da Linguagem de Programação utilizada no código fonte do AgroMart para permitir a medição de Latência de requisições para a API do sistema.
 
 ### Recursos Humanos
 
@@ -99,71 +102,3 @@ Para garantir uma boa organização e dividir bem as responsabilidades entre os 
 | `1.0`      | 25/06/2025 | Criação do cronograma                                                                                                                                                                                                                                          | [Victório Lázaro](https://github.com/Victor-oss) |
 | `1.1`      | 25/06/2025 | Alteração da primeira atividade do cronograma para ser só um estudo sobre o Q-Rapids; criação das duas tarefas relacionadas a definição das métricas dos objetivos de Eficiência e Usabilidade; criação da tarefa relacionada a definição das métricas PSM/CID | [Victório Lázaro](https://github.com/Victor-oss) |
 | `1.2`      | 07/07/2025 | Adição e atribuição das atividades envolvendo as medições das questões de Usabilidade                                                                                                                                                                          | [Victório Lázaro](https://github.com/Victor-oss) |
-
-## Novo Burndown Chart das Tarefas Recentes
-
-O gráfico abaixo mostra o acompanhamento visual da finalização das tarefas adicionadas recentemente ao cronograma. O burndown chart permite visualizar rapidamente o ritmo de conclusão das atividades, comparando o progresso real com o ideal, facilitando a identificação de possíveis atrasos ou adiantamentos.
-
-### Burndown Chart - Tarefas Recentes
-
-<canvas id="burndownRecentes" width="400" height="200"></canvas>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-  const datasRecentes = [
-    '07/07/2025', '08/07/2025'
-  ];
-  // Total de tarefas recentes: 3
-  // Situação: 2 concluídas em 07/07, 1 concluída em 08/07
-  const tarefasRestantesRecentes = [1, 0];
-  const linhaIdealRecentes = tarefasRestantesRecentes.map((_, i, arr) => {
-    const totalTarefas = 3;
-    return Math.max(0, totalTarefas - (totalTarefas / (arr.length - 1)) * i);
-  });
-  new Chart(document.getElementById('burndownRecentes').getContext('2d'), {
-    type: 'line',
-    data: {
-      labels: datasRecentes,
-      datasets: [
-        {
-          label: 'Ideal',
-          data: linhaIdealRecentes,
-          borderColor: 'rgba(0, 200, 0, 0.8)',
-          backgroundColor: 'rgba(0, 200, 0, 0.2)',
-          fill: false,
-          borderDash: [5, 5],
-        },
-        {
-          label: 'Real',
-          data: tarefasRestantesRecentes,
-          borderColor: 'rgba(200, 0, 0, 0.8)',
-          backgroundColor: 'rgba(200, 0, 0, 0.2)',
-          fill: false
-        }
-      ]
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        title: {
-          display: true,
-          text: 'Burndown Chart - Tarefas Recentes'
-        }
-      },
-      scales: {
-        y: {
-          beginAtZero: true,
-          title: {
-            display: true,
-            text: 'Tarefas Restantes'
-          }
-        },
-        x: {
-          title: {
-            display: true,
-            text: 'Dias'
-          }
-        }
-      }
-    }
-  });
-</script>

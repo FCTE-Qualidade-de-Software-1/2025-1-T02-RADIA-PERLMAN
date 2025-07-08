@@ -40,7 +40,7 @@ Em métodos ágeis com foco em entrega contínua de valor, como o Kanban, o cont
     return datas;
   }
   // Data de início e data atual
-  const labels = gerarDatas('2025-06-25', new Date());
+  const labels = gerarDatas('2025-06-25', '2025-07-08');
   const ctx = document.getElementById('myChart').getContext('2d');
   const myChart = new Chart(ctx, {
       type: 'line',
@@ -48,25 +48,25 @@ Em métodos ágeis com foco em entrega contínua de valor, como o Kanban, o cont
           labels: labels,
           datasets: [{
               label: 'Implantado',
-              data: [0, 0, 0, 0, 0, 1, 3, 3, 3, 3, 3, 3],
+              data: [0, 0, 0, 0, 0, 1, 3, 3, 3, 3, 3, 3, 9, 9, 15],
               borderColor: 'rgb(20, 8, 128)',
               backgroundColor: 'rgba(20, 8, 128, 0.74)',
               fill: true
           }, {
               label: 'Completo',
-              data: [0, 0, 0, 0, 1, 2, 0, 0, 0, 0, 4, 6],
+              data: [0, 0, 0, 0, 1, 2, 0, 0, 0, 0, 4, 6, 0, 0, 0],
               borderColor: 'rgb(158, 3, 3)',
               backgroundColor: 'rgba(158, 3, 3, 0.74)',
               fill: true
           }, {
               label: 'Em Progresso',
-              data: [0, 3, 3, 3, 2, 0, 0, 3, 3, 3, 2, 0],
+              data: [0, 3, 3, 3, 2, 0, 0, 3, 3, 3, 2, 0, 0, 0, 0],
               borderColor: 'rgb(182, 194, 75)',
               backgroundColor: 'rgba(182, 194, 75, 0.74)',
               fill: true
           }, {
               label: 'Para Fazer',
-              data: [3, 0, 0, 0, 0, 0, 3, 0, 3, 3, 0, 0],
+              data: [3, 0, 0, 0, 0, 0, 3, 0, 3, 3, 0, 0, 0, 6, 0],
               borderColor: 'rgb(36, 93, 155)',
               backgroundColor: 'rgba(36, 94, 155, 0.74)',
               fill: true
