@@ -65,7 +65,7 @@
 
 #### Relação entre Objetivos, Questões e Métricas - Usabilidade
 
-![Métricas Usabilidade](./assets/metricas.png)
+![Métricas Usabilidade](./assets/metricas2.png)
 
 ## Abstraction sheet do Objetivo de Medição 2
 
@@ -131,7 +131,7 @@
 
 #### Relação entre Objetivos, Questões e Métricas - Eficiência
 
-![Métricas Eficiência](./assets/metricas2.png)
+![Métricas Eficiência](./assets/metricas.png)
 
 ---
 
@@ -141,3 +141,4 @@
 |------------|--------------|-----------------------------------|---------------------------------------------------|
 | `1.0`      | 03/06/2025   | Reorganização dos Conteúdo GQM    | [Daniel Rodrigues](https://github.com/DanielRogs) |
 | `1.1`      | 07/07/2025   | Apagando métricas Q2 e Q3 de Usabilidade    | [Victório Lázaro](https://github.com/Victor-oss) |
+| `1.2`      | 08/07/2025   | Criação do diagrama de eficiência    | [Pedro Izarias](https://github.com/Izarias) |
