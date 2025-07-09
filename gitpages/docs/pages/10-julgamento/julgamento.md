@@ -83,3 +83,11 @@ O grau em que o software pode ser transferido de um ambiente para outro. Inclui:
 - **Adaptabilidade**: Capacidade de se adaptar a diferentes ambientes.
 - **Instalabilidade**: Facilidade de instalação em um ambiente especificado.
 - **Substituibilidade**: Capacidade de substituir outro software para a mesma finalidade no mesmo ambiente.
+
+---
+
+**Histórico de Versões**
+
+| **Versão** | **Data**   | **Descrição**                    | **Autor**                        |
+| ---------- | ---------- | -------------------------------- | -------------------------------- |
+| `1.0`      | 08/07/2025 | Criação do Documento | [Danilo César](https://github.com/DaniloCTM) |
