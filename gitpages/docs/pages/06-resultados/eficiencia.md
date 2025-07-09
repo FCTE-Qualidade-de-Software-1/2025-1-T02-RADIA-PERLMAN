@@ -26,6 +26,18 @@ A questão 2 aborda otimização das consultas ao banco de dados, que não só �
 Executando a api-dicionario localmente e buscando pelas csas, registramos um tempo de execução de 25.111 ms. 
 
 <center>
+<img src="../assets/Consulta_all_csa.png"/>
+<br />
+<spam>Figura 2 - Consulta de CSAs no banco de dados</spam>
+<br />
+<spam>Fonte: Autores, 2025</spam>
+</center>
+
+### Índices
+
+A api tem uma grande quantidade de índices, ajudando na realização das consultas:
+
+<center>
 <img src="../assets/ExemploConsulta.png"/>
 <br />
 <spam>Figura 3 - Quantidade de índices da <b>api</b> descrito em "Count"</spam>
@@ -33,22 +45,13 @@ Executando a api-dicionario localmente e buscando pelas csas, registramos um tem
 <spam>Fonte: Autores, 2025</spam>
 </center>
 
-A api tem uma grande quantidade de índices, ajudando na realização das consultas:
-
-<center>
-<img src="../assets/ExemploConsulta2.png"/>
-<br />
-<spam>Figura 4 - Quantidade de índices da <b>api-dicionario</b> descrito em "Count"</spam>
-<br />
-<spam>Fonte: Autores, 2025</spam>
-</center>
 
 Já os de índices do api-dicionario tem apenas dois índices, e apenas um deles serve para a consulta de CSAs pela chave primária, o que pode causar buscas sequenciais na tabela caso outros atributos sejam usados para fazer a busca:
 
 <center>
 <img src="../assets/ExemploConsulta2.png"/>
 <br />
-<spam>Figura 5 - Uso de Memória pela endpoint de cadastro de CSA</spam>
+<spam>Figura 4 - Quantidade de índices da <b>api-dicionario</b> descrito em "Count"</spam>
 <br />
 <spam>Fonte: Autores, 2025</spam>
 </center>
