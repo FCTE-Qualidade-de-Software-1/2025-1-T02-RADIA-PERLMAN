@@ -48,8 +48,6 @@
     <td colspan="2">
         <ul>
             <li>90% das mensagens de erro possíveis descrevem de forma coerente o real motivo do erro, no mínimo</li>
-            <li>Pelo menos 90% das mensagens de erro não mencionam termos relacionados ao funcionamento interno do sistema</li>
-            <li>Pelo menos 90% das mensagens de erro não mencionam termos relacionados ao funcionamento interno do sistema</li>
         </ul>
     </td>
     <td colspan="2">
