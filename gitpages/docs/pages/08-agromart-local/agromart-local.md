@@ -88,7 +88,7 @@ O resultado dessa requisição vai conter o id da CSA e esse id é o código da 
 
 <center>
 
-<a id="fig2">Figura 2 – Tela de Login que pede o Código da CSA</a>
+<a id="fig2">Figura 2 – Tela de Login que pede o Código da CSA</a><br>
 
 <img src="https://github.com/FCTE-Qualidade-de-Software-1/2025-1-T02-RADIA-PERLMAN/blob/agromart_local/gitpages/docs/assets/tela_de_login_agromart.png?raw=true">
 
